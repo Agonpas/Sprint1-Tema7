@@ -11,6 +11,7 @@ class GradoEstudianteTest extends TestCase{
     public function testVerificarGradoEstudiante($nota, $resultadoEsperado) {
         $this->assertEquals($resultadoEsperado, $this->nota->comprobarGrado($nota)); 
     }
+    /*IMPORTANTE el orden de variables ($nota, $resultadoEsperado) se debe mantener con las entradas del array*/
     public function datosParaVerificarGradoEstudiantes() {
         return [
             [65, "Primera División"],
